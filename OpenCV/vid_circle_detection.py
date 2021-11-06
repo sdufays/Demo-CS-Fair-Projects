@@ -2,7 +2,7 @@ import numpy as np
 
 global size
 
-cap = cv2.VideoCapture('/Users/sarahdufays/PycharmProjects/circle_detection/mov_4.MOV')
+cap = cv2.VideoCapture('/Users/sarah/PycharmProjects/circle_detection/mov_4.MOV')
 
 while True:
     wtv, img1 = cap.read()
