@@ -1,8 +1,16 @@
 import os
-import numpy as np # linear algebra
+import numpy as np 
 import pandas as pd 
 import csv
 import os
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import plot_confusion_matrix
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import mean_squared_error
+from sklearn import metrics
+import math
+
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
@@ -21,6 +29,7 @@ fileIDnames = ['Type_of_Email',
                "Unique", 
                'Most_Repeated', 
                'Upper_case_text']
+
 writer = csv.DictWriter(file, fieldnames=fileIDnames)
 writer.writerow({
         'Type_of_Email': 'Type_of_Email',
@@ -82,12 +91,8 @@ for filename in os.listdir(path):
         'Most_Repeated':"NA", 
         'Upper_case_text':num_upper_text})
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-
-
 ham_email = email_df[email_df['Type_of_Email']=="Ham"]
 spam_email = email_df[email_df['Type_of_Email']=="Spam"]
-
 
 ham_email = ham_email['Text_Body']
 spam_email = spam_email['Text_Body']
@@ -130,7 +135,6 @@ df_total = df_ham.append(df_spam , ignore_index=True)
 df_total = df_total.replace(np.nan, 0)
 
 # split 
-from sklearn.model_selection import train_test_split
 train, test  = train_test_split(df_total, test_size=0.2, random_state=42)
 
 y_train = train['Type']
@@ -140,10 +144,6 @@ y_test = test['Type']
 x_test = test.drop(['Type'], axis = 1)
 
 # train 
-from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import mean_squared_error
-from sklearn import metrics
-import math
 
 clf = GaussianNB()
 clf.fit(x_train,y_train)
@@ -157,8 +157,6 @@ print("RMSE: "+ str(rmse))
 
 titles_options = [("Confusion matrix, without normalization", None),
                   ("Normalized confusion matrix", 'true')]
-
-from sklearn.metrics import plot_confusion_matrix
 
 for title, normalize in titles_options:
     disp = plot_confusion_matrix(clf, x_test, y_test,
