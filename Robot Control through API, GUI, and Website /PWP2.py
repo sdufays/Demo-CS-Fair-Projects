@@ -61,28 +61,28 @@ def video_feed():
 def fwd():
    arrows.append(1)
    rc.forward(0.1, 30)
-   return "JUST WORK OK"
+   return "moved forward"
 
 # move the robot rev
 @app.route('/rev', methods=['GET'])
 def rev():
    arrows.append(3)
    rc.reverse(0.1, 30)
-   return "JUST WORK OK"
+   return "moved backwards"
 
 # move the robot left
 @app.route('/left', methods=['GET'])
 def left():
     arrows.append(2)
     rc.left(0.05)
-    return "JUST WORK OK"
+    return "moved left"
 
 # move the robot right
 @app.route('/right', methods=['GET'])
 def right():
    arrows.append(4)
    rc.right(0.05)
-   return "JUST WORK OK"
+   return "moved right"
 
 # run the predetermined course
 @app.route('/run')
@@ -104,7 +104,7 @@ def run():
     rc.right(float(e))
     time.sleep(0.5)
     rc.forward(float(f), 15)
-    return "robot work yes"
+    return "robot worked!"
 
 
 app.run(host= '0.0.0.0', port=8080, debug=True, threaded=True)
