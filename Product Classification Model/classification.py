@@ -263,7 +263,7 @@ joblib.dump(classifier, joblib_file)
 joblib_LR_model = joblib.load(joblib_file)
 joblib_LR_model
 
-def ml_linear_kNeighbor(salary, gender, age):
+def ml_prediction(salary, gender, age):
     if gender == 0: 
         sex = "male"
     else if gender == 1: 
@@ -279,4 +279,4 @@ def ml_linear_kNeighbor(salary, gender, age):
 salary = input("Salary: ")
 gender = input("Gender (0 for male and 1 for female) :")
 age = input("Age: ")
-ml_linear_kNeighbor(int(salary),int(gender),int(age))
+ml_prediction(int(salary),int(gender),int(age))
