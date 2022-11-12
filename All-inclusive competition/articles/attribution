@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Styling from CSS files to format the page -->
+  <title>Homepage - Semantic</title>
+  <link rel="stylesheet" type="text/css" href="../dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+
+<!--  JS files - opening menu and sidebar  -->
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="../dist/components/visibility.js"></script>
+  <script src="../dist/components/sidebar.js"></script>
+  <script src="../dist/components/transition.js"></script>
+  <script src="../script.js"></script>
+</head>
+<body>
+
+
+<!-- Main Menu, same for every file  -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="item">Home</a>
+    <a class="item">About us</a>
+    <a class="active item">Identifying & Reflecting on Unconscious Bias</a>
+    <a class="item">How to Help Your Community</a>
+    <a class="item">How to Help Your Business</a>
+    <a class="item">Diverse Resources</a>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="item">Home</a>
+    <a class="item">About us</a>
+    <a class="active item">Identifying & Reflecting on Unconscious Bias</a>
+    <a class="item">Helping Your Community</a>
+    <a class="item">Helping Your Business</a>
+    <a class="item">Diverse Resources</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher"><div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+           <!-- assign files to different buttons-->
+           <a class="item" href="../index.html" >Home</a>
+           <a class="item" href="../about.html">About us</a>
+           <a class="active item" href="../bias.html">Identifying & Reflecting on Unconscious Bias</a>
+           <a class="item" href="../community.html">How to Help Your Community</a>
+           <a class="item" href="../business.html">How to Help Your Business</a>
+           <a class="item" href="../resources.html">Diverse Resources</a>
+      </div>
+    </div>
+
+    <!-- Title at the top of the Page -->
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Attribution Bias
+      </h1>
+      <h2></h2>
+      <div class="ui huge primary button"><p ><a style="color:#FFFFFF" href="../bias.html">Return to Previous Page</a></p></div>
+    </div>
+  </div>
+
+
+<!-- Start of web page, first section-->
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+          <h3 class="ui header"><b>Attribution Bias</b></h3>
+          <p><ul class="tab">
+            <p><a href="#what_is">"What is Attribution?"</a></p>
+            <p><a href="#matter">"Why Does This Mater"</a></p>
+            <p><a href="#help">“How do I Help”</a></p>
+          </ul></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="ui vertical stripe segment" id="what_is">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+            <h3 class="ui header"><b>What is Attribution?</b></h3>
+            <p>According to the Cambridge-English dictionary, attribution is defined as “the act of believing that one event is the result or work of another”.  Attribution is a bias that refers to the systematic errors that a person makes when they try to find reasons for behaviors and motivations. It additionally refers to how we tend to attribute the negative behaviors and motivations of others to internal characteristics. This bias is often the cause of many microaggressions and microinvalidations.</p>
+            <br>
+            <p><i>Think about your attributions: how often are you guilty of this?</i> The attributions we make at difficult times in our lives matter. They affect how we feel in the moment, and they also impact the rest of our hour, day, week, and even define our lives.</p>
+            <br>
+            <p>Due to the way our brains are designed to think, it is incredibly easy to jump into conclusions and to blame others around us for events that frustrate us or cause us an inconvenience. There are two types of attribution: first is internal attribution, based on the individual characteristics of the person, and second is external attribution, based on the situation or circumstance.</p>
+            <br>
+            <p>As humans, we have a tendency to feel more anger or frustration through internal attribution, meaning when we judge another person to be responsible for a behaviour or event that negatively affects us. For example, when a driver cuts someone off, the person who has been cut off is often more likely to attribute blame to the reckless driver's inherent personality traits (i.e. <i>“That driver is rude and incompetent"</i>) rather than situational circumstances (i.e. <i>"That driver was probably late to work and wasn’t paying attention").</i></p>
+            <br>
+            <p> Alternatively, we are less angry and frustrated at external attribution, which is when we decide that external circumstances are responsible for the behavior or event.  This process stems from our brain’s flawed ability to assess the reasons for certain behaviors – particularly those that lead to success and failure.</p>
+            <br>
+            <p>We generally attribute our own accomplishments to our skill, and our failures to external factors, such to hindrances beyond our control. Consequently, we are less likely to blame and find fault in ourselves. However, this perception often reverses when we view other people. When others accomplish something successfully, we are more likely to consider them lucky or benefited by someone else, and more likely to attribute their errors to poor capabilities or personal qualities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment" id="matter">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+            <h3 class="ui header"><b><i>Why does this matter?</i></b></h3>
+            <p>Attribution is often expressed through stereotypes and discrimination, whether consciously or unconsciously done. For example, attribution is often used to undervalue women’s accomplishments and place more emphasis on their mistakes. Research shows that hiring feedback given to women tends to be vague and focused on communication style, while men are given specific feedback that tends to be tied to business goals and technical skills that accelerate advancement.  Attribution can easily skew your view of a candidate’s performance by making you minimise their accomplishments, focus too hard on their faults, and potentially disregard a talented candidate.</p>
+            <br>
+            <p>Further, attribution bias has extremely broad societal consequences. We are especially likely to engage in it when it comes to perceived immoral behavior, which often lines up with the kinds of things that are criminalized in our society—for example, theft or drug use. A prime example of attribution bias in our society is the statistic that, although, only being 13% of the population, black people are <b>seven</b> times more likely than white people to be wrongly convicted of murder</p>
+            <br>
+            <p>This importance of attribution bias is that we are biased and conditioned to ignore situational factors that might have led somebody to behave a certain way. In turn, this can lead us to ignore systemic factors, such as discrimination, that contribute to criminal behavior and other negative outcomes, and fixate solely on individuals. Overcoming attribution is an important step towards reducing discrimination and increasing inclusivity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="ui vertical stripe segment" id="help">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+            <h3 class="ui header"><i>How do I help?</i></h3>
+            <p>First, you have to understand the full implication and essense of attribution. There are many types of attribution biases, all of which often contribute to discrimination and the hindrance of DEI within our community. Below is a list of common attribution bias types and what they are:</p>
+            <br>
+            <p><ul class="double" style="font-size:13px" style="font-family:"'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif" type="1">
+                <li><p> Fundamental Attribution Bias - our tendency to attribute the cause of others’ behaviour as the result of internal characteristics while attributing our own behaviour as the result of our environment.</p></li>
+                <br>
+                <li><p>False Consensus Bias - our tendency to assume that other people are similar to us in their thinking, feeling, and lifestyle. When we do this we judge them according to our own perceptions and not their own, which hinders inclusion. People often have different intentions, based on different values and motivations, to the conclusion we are inclined to draw.</p></li>
+                <br>
+                <li><p>Negative Impression Bias - our tendency to over-emphasise negative information about others. When we feel we are wrong, we often exaggerate aspects of others we deem negative. .</p></li>
+                <br>
+                <li><p>Confirmatory Bias - Once we have come to a conclusion about a person or event, we look for all the evidence that confirms our view, and we discredit all the evidence that doesn't support our view. This process often entails closing our eyes, hearts, and minds to new information and restrains our experience and mentalities.</p></li>
+          </ul></p>
+            <br>
+            <br>
+            <p>Once you understand it and reflect upon your own tendencies of attribution, there are certain mentalities you can foster and encourage others to develop that reduce the harmful effects of attribution.</p>
+            <br>
+            <p>First is <b>challenging initial perspectives.</b> Whenever your first instinct is to wallow in anger, think of at least two other possibilities that may have led to the situation that you had not previously considered. Consider the possibility that there is no one to blame, but it was the unfortunate fault of coincidental interaction of the people in the situation.</p>
+            <br>
+            <p><b>Second is to indulge in empathy.</b> Place yourself in other people’s shoes:  <i> what scenario could possibly bring you to react in the way that person did? You saw a few “low-lifes” stealing from the grocery’s store?</i> Instead of frowning in disgust, ask yourself: <i>what would ever prompt me to do such a thing? Needing food to feed your family maybe? </i></p>
+            <br>
+            <p><b>Third is to educate people about attribution biases.</b> Let people know about the kinds of unconscious biases that may be affecting their thinking. Attribution bias is not necessarily a concept that many people stop to reflect upon or even acknowledge in life. Just the act of being aware of it and its unfavorable effects creates an incentive to push back against this predisposition to overcome it. So talk about it. Spread your knowledge of this bias as to reduce it.</p>
+            <br>
+            <p>In these ways, it is possible to make steady progress in the right direction and enhance inclusion and acceptance in your community and life.</p>
+        </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Footer code at the bottom left -->
+  <div class="ui inverted vertical footer segment">.
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header" style="color: white">All-Inclusive</h4>
+          <div class="ui inverted link list">
+            <a class="item">Jennifer Chiou </a>
+            <a class="item">Sarah Dufays</a>
+          </div>
+        </div>
+          <!-- footer code at the bottom right -->
+        <div class="three wide column">
+          <h4 class="ui inverted header" style="color: white">Contacting Us</h4>
+           <div class="ui inverted link list">
+            <a class="item">pl247091@ahschool.com</a>
+            <a class="item">pl247711@ahschool.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
