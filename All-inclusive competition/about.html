@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Styling from CSS files to format the page -->
+  <title>Homepage - Semantic</title>
+  <link rel="stylesheet" type="text/css" href="../dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+<!--  JS files - opening menu and sidebar  -->
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="../dist/components/visibility.js"></script>
+  <script src="../dist/components/sidebar.js"></script>
+  <script src="../dist/components/transition.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Main Menu, same for every file  -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="item">Home</a>
+    <a class="active item">About us</a>
+    <a class="item">Identifying & Reflecting on Unconscious Bias</a>
+    <a class="item">How to Help Your Community</a>
+    <a class="item">How to Help Your Business</a>
+    <a class="item">Diverse Resources</a>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="item">Home</a>
+    <a class="active item">About us</a>
+    <a class="item">Identifying & Reflecting on Unconscious Bias</a>
+    <a class="item">Helping Your Community</a>
+    <a class="item">Helping Your Business</a>
+    <a class="item">Diverse Resources</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher"><div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+           <!-- assign files to different buttons-->
+           <a class="item" href="index.html" >Home</a>
+           <a class="active item">About us</a>
+           <a class="item" href="bias.html">Identifying & Reflecting on Unconscious Bias</a>
+           <a class="item" href="community.html">How to Help Your Community</a>
+           <a class="item" href="business.html">How to Help Your Business</a>
+           <a class="item" href="resources.html">Diverse Resources</a>
+      </div>
+    </div>
+
+    <!-- Title at the top of the Page -->
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        About us
+      </h1>
+      <h2>ALl-Inclusive</h2>
+      <div class="ui huge primary button"><p ><a style="color:#FFFFFF" href="bias.html">Get Started</a></p></div>
+    </div>
+  </div>
+
+
+<!-- Start of web page, first section-->
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+          <h3 class="ui header">About Us</h3>
+          <!-- Index of page, sends user to different subsections-->
+          <p><ul class="tab">
+          <p><a href="#our_mission">"Our Mission"</a></p>
+          <p><a href="#so_what_is_dei">"So What is Diversity, Equity, and Inclusion?"</a></p>
+          <p><a href="#how_do_we_contribute">"How Do We Contribute to Diversity, Equity, and Inclusion?"</a></p>
+          <p><a href="#customers">“Catering to Our Customers”</a></p>
+          </ul></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="ui vertical stripe segment" id="our_mission">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+          <h3 class="ui header"><b>Our Mission</b></h3>
+          <p><B>This project was created for High Tech Hacks 2022</B>, with the goal of promoting diversity, equity, and inclusion in both communities and businesses/organizations in order to bring attention to the problems of marginalized communities. We want to increase awareness about not only explicit biases, but specifically the lesser-known unconscious biases that bleed into all aspects of life.. We want to increase awareness about not only explicit biases, but specifically the lesser-known unconscious biases that bleed into all aspects of life.</p>
+          <p style="text-align:center;">
+            <img src="https://www.businessmagazinegainesville.com/wp-content/uploads/2017/09/8stepsculturaldiversity.jpg">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment" id="so_what_is_dei">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+          <h3 class="ui header"><i><b>So What is Diversity, Equity, and Inclusion?</b></i></h3>
+          <p>Diversity is the presence of individuals with varying backgrounds and/or identities, and it is necessary in all communities and organizations because regardless of race, skin color, gender, sexual orientation, or financial status, everyone’s opinions deserve to be heard, and DEI gives people the chance to express themselves.</p>
+          <br>
+          <p>Furthermore, equity––the fair and just treatment of all people with consideration to the fact that individuals need different resources to succeed due to systematic differences in access to opportunity––is imperative to creating truly diverse spaces. For an organization to be diverse, everyone must have equal opportunities to become a member/employee of the organization, and that requires equity. It can be in the form of financial aid, objective hiring methods, or ESL language resource, as long as it provides marginalized communities with the adequate help to be equally represented.</p>
+          <br>
+          <p>However, diversity and equity alone aren’t enough. Companies and communities need to be inclusive of everyone’s input––they need to demonstrate inclusion by creating an environment where all individuals are welcomed, respected, supported, and hold real power to lead and succeed. Without inclusion, diversity means nothing because marginalized people will still be pushed aside and discriminated against. Inclusion allows everyone to feel like they belong and they matter, creating more open conversations and diverse perspectives.</p>
+          <br>
+          <p>To put it simply, diversity is when everyone gets invited to the party, equity is when the people who don’t have cars are provided transportation, and inclusion is when everyone gets equal space to dance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical stripe segment" id="how_do_we_contribute">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+          <h3 class="ui header"><i>How Do We Contribute to Diversity, Equity, and Inclusion?</i></h3>
+          <p>	Here at All-Inclusive, we provide a variety of methods (such as self-reflection, learning tools, and awareness articles), resources (such as educational material for kids and an inclusive dictionary), and toolkits for business to promote DEI for every possible community. </p>
+          <br>
+          <p><b>First, Diversity:</b></p>
+          <br>
+          <p>To promote diversity in businesses and organizations, we provide a <b>Hiring Toolkit</b> to mitigate implicit bias during the hiring process and to create objective methods to evaluate candidates, a <b>Customer Toolkit</b> to ensure that everyone within a company’s target demographic is catered to (for example, a makeup brand for women should provide foundation shades for all women, not just light-skinned women), and the <b>contact information for DEI experts</b> who can be hired.</p>
+          <p style="text-align:left;">
+            <img src="https://retailtouchpoints.com/wp-content/uploads/2019/09/dab5257b99fec40e651d202bd80db924.jpg" width="1200" height="500">
+          </p>
+          <br>
+          <p><b>Next, Equity:</b></p>
+          <br>
+          <p>Some of our resources that help communities and organizations become more equitable include our <b>Educative Materials</b> that provide ways to combat bias in children, an article that recommends <b>ways to help people who aren’t native English speakers</b> (such as with ESL services or English tutoring), an article that explains the need for and benefits of <b>gender neutral bathrooms</b> and how to incorporate them, and a <b>We Hear You Toolkit</b> for organizations to allow people to anonymously report microaggressions or give insight on how the community can be improved.</p>
+          <p style="text-align:center;">
+            <img src="pictures/603e8650f91f0a4c0af5c428_equity-infographic.png" width="600" height="500">
+          </p>
+          <p><b>Lastly, Inclusion:</b></p>
+          <br>
+          <p>We also have resources that promote inclusion, such as our <b>Communication Toolkit</b> for businesses to emphasize the importance of DEI to employees, our article on <b>the importance of pronouns</b>, our <b>All-Inclusive Dictionary</b> to help people develop a more inclusive vocabulary, a collection of links to <b>unbiased image databases</b> to decrease unconscious bias, our article on <b>how to train your brain to challenge stereotypes</b>, and some <b>diverse pieces of literature and media.</b></p>
+          <br>
+          <p style="text-align:center;">
+            <img src="https://idbinvest.org/sites/default/files/styles/main_936x656/public/blog_post/Genero-mayo-2.jpg?itok=fU4jtvP4" width="800" height="500">
+          </p>
+          <p>Overall, our <b>Identifying and Reflecting on Unconscious Bias</b> page targets all three attributes of an equal society by honing in on the implicit biases that are present everywhere in our society.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="ui vertical stripe segment" id="customers">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="fifteen wide column">
+          <h3 class="ui header">Catering to Our Customers</h3>
+          <p>Here at All-Inclusive, we want to amplify marginalized voices, so we make sure to constantly reach out to members of our community and ask them for input, which we then use to improve and develop the resources we provide.</p>
+          <br>
+          <p>Since we focus on unconscious biases, which affects everyone, we wanted to create a website that would benefit all marginalized groups (and all people in general) because of the broad nature of our topic. Thus, every aspect of All-Inclusive was created with our users in mind. Our solutions are accessible and easy for everyone to implement, and we also encourage all users to do more research independently and lean in to the subjects they feel are impacting their community the most.</p>
+          <br>
+          <p>We know that we cannot erase the suffering and oppression marginalized groups face, but at All-Inclusive, we make it a priority to show them that we hear them, we see them, and we care about the prejudice they experience.</p>
+          <br>
+          <p>All-Inclusive isn’t a solution to discrimination, and it also isn’t a guaranteed creator of DEI, but what it does ensure is a more open perspective to everyone who visits the website, which contributes to a more accepting, inclusive, and equitable mindset in general.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sixth section, ending-->
+ <div class="ui vertical stripe segment">
+      <div class="ui text container">
+        <h2 style="text-align:center;">Remember, change starts with you.</h2>
+              <p align="center">- All-Inclusive</p>
+      </div>
+    </div>
+
+
+<!--Footer code at the bottom left -->
+  <div class="ui inverted vertical footer segment">.
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header" style="color: white">All-Inclusive</h4>
+          <div class="ui inverted link list">
+            <a class="item">Jennifer Chiou </a>
+            <a class="item">Sarah Dufays</a>
+          </div>
+        </div>
+          <!-- footer code at the bottom right -->
+        <div class="three wide column">
+          <h4 class="ui inverted header" style="color: white">Contacting Us</h4>
+           <div class="ui inverted link list">
+            <a class="item">pl247091@ahschool.com</a>
+            <a class="item">pl247711@ahschool.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
