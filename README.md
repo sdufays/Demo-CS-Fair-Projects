@@ -4,4 +4,4 @@
 
 ## Descriptions
 
-Portfolio of short-term tech work including preliminary machine learning algorithns, websites, and simulations 
+Portfolio of short-term, none-internship-related tech work including machine learning algorithns, websites, and simulations 
